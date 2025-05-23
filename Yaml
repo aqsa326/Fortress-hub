@@ -1,0 +1,16 @@
+name: Deploy Static Site
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nwtgck/actions-netlify@v1.1
+        with:
+          publish-dir: ./
+          production-branch: main
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ wMEfipgPgOo2hH2aFQcCWEVWapqD5ndU8OSO5vmZ1vM }}
+          NETLIFY_SITE_ID: ${{nfp_9A4L77qEYoobXMCG9VaAVzbqo18ruQoz4c64}}

@@ -1,0 +1,8 @@
+mkdir fortress-hub && cd fortress-hub
+unzip ~/Downloads/fortress-hub-complete.zip
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/aqsa326/fortress-hub.git
+git push -u origin main
